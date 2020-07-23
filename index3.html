@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        // function thirdsawal() {
+        //     var side1 = prompt("Enter the value of a");
+        //     var side2 = prompt("Enter the Value of b");
+        //     var side3 = prompt("Enter the Value oc C");
+        //     var s= side1 + side2 + side3;
+        //      var result= s/2;
+
+        //     // var area = (result * ((result-side1) * (result-side2) * (result-side3)));
+        //     document.write("Area of the triangle  side a b& c The: "+result);
+        // }
+        // thirdsawal()
+
+
+
+        //=======================
+        function add() {
+            var a, b, c, d;
+            a = Number(document.getElementById("first").value);
+            b = Number(document.getElementById("second").value);
+            c = Number(document.getElementById("third").value);
+            side = Number(document.getElementById("side").value);
+
+            d = a + b + c;
+            document.getElementById("answer").value = d;
+           var side= d/2
+            document.getElementById("answer").value = side;
+        }
+
+function triangle(){
+    
+    var area =  Math.sqrt(side*((side-a)*(side-b)*(side-c)));
+    document.getElementById("answer").value = area;
+    
+}
+add();
+triangle();
+    </script>
+</head>
+
+<body>
+    Enter the First number : <input id="first"><br/>
+    Enter the Second number: <input id="second"><br/>
+    Enter the Second number: <input id="third">
+    <p id="side">
+    <button onclick="add()">Side of the triangle</button>
+    <input id="answer">
+    <button onclick="triangle()">Area of the triangle</button>
+    <p id="area">
+
+        <p id="answer">
+
+    
+</body>
+
+</html>
